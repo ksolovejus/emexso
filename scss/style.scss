@@ -11,8 +11,10 @@
 
 
 .image{
+
   width: 200px;
   height: 200px;
   background: url(../assets/img1.png);
-  background-size: cover;
+
+  background-size: contain;
 }
