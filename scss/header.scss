@@ -1,0 +1,49 @@
+header{
+    @include flex-between;
+    border-bottom: 1px solid rgba(135, 207, 235, 0.284);
+  
+    i{
+      color: $orange;
+    }
+    .calls{
+      display: flex;
+      gap: 10px;
+    }
+  
+    .social{
+      display: flex;
+      gap: 10px;
+      a{
+        border: 1px solid $orange;
+        border-radius: 4px;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        // transition: 0.3s;
+  
+  
+        &:hover{
+          background: $orange;
+        }
+  
+        &:hover i{
+          color: white;
+        }
+      } // anchor
+    } // social
+  }// header
+
+  @media(max-width: 768px){
+    header{
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .calls{
+      flex-direction: column;
+    }
+  }
